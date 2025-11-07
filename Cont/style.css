@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Win95";
+  src: url(../Props/Fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Win98";
+  src: url(../Props/Fonts/MSW98UI-Regular.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Pixie97";
+  src: url(../Props/Fonts/ari-w9500.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "hibrid7";
+  src: url(../Props/Fonts/BelanidiSerif-Regular.otf) format('opentype');
+  font-weight: bold;
+}
+
+:root {
+  --primary-color: #e1e4bf;
+  --secondary-color: #fcffe0;
+  --third-color: #f0f3ca;
+  --fourth-color: #737b72;
+  --lineVck-color: #2c302b;
+
+  --line-wcolor: #d7dab9;
+  --line-bcolor: #4f534b;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  padding: 10px;
+  place-items: center;
+  background-color: var(--primary-color);
+}
+
+#BackExpl {
+  position: fixed;
+  width: 100%;
+  opacity: .8;
+  z-index: -1;
+  margin: -10px;
+}
+
+#ContainerAll {
+  display: flex;
+  place-items: center;
+  width: 600px;
+}
+
+#UserUpDc {
+  padding: 5px;
+  width: 180px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-left: 3px solid var(--line-wcolor);
+  border-top: 3px solid var(--line-wcolor);
+  border-bottom: 3px solid var(--line-bcolor);
+  border-right: 3px solid var(--line-bcolor);
+}
+
+#Container-Center {
+  width: 100%;
+  font-family: "win98";
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  place-content: center;
+  padding: 4px;
+}
+
+#Fhead {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  width: 600px;
+  place-items: center;
+  text-align: center;
+  font-family: "win98";
+}
+
+#Fhead h1 {
+  font-family: "hibrid7";
+}
+
+#Fhead div {
+  position: absolute;
+  width: 60%;
+}
+
+#Fhead p {
+  font-size: 20px;
+}
+
+#ImgF {
+  z-index: -1;
+  width: 98%;
+  outline: dashed .1px var(--lineVck-color);
+  outline-offset: 2px;
+}
+
+.Others {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  background-color: var(--third-color);
+  text-align: center;
+  height: 100px;
+  padding: 0 40px;
+  margin: 10px 5px 30px 5px;
+  outline: dashed .1px var(--lineVck-color);
+  outline-offset: 2px;
+}
+
+.CdocAb {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  background-color: var(--third-color);
+  padding: 5px 10px;
+  text-align: center;
+  margin: 10px 5px;
+  outline: dashed .1px var(--lineVck-color);
+  outline-offset: 2px;
+}
+
+.CdocAb h1 {
+  font-family: "hibrid7";
+}
+
+.CdocAb p {
+  margin: 5px 0;
+}
+
+.CdocAb h2 {
+  font-family: "hibrid7";
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--fourth-color);
+}
+
+.CdocAb b {
+  font-family: "Win95";
+}
+
+#RightSide {
+  width: 300px;
+  place-items: center;
+}
+
+#SePR {
+  width: 20px;
+}
+
+.Bander {
+  background-color: var(--line-wcolor);
+  padding: 0 8px;
+  text-align: left;
+  margin: 8px 0;
+  outline: dashed .1px var(--fourth-color);
+  outline-offset: 2px;
+}
+
+#ContxBand {
+  width: calc(100% + 50px);
+  transform: translateX(-30px);
+}

@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Win95";
+  src: url(../Props/Fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Win98";
+  src: url(../Props/Fonts/MSW98UI-Regular.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Pixie97";
+  src: url(../Props/Fonts/ari-w9500.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "hibrid7";
+  src: url(../Props/Fonts/BelanidiSerif-Regular.otf) format('opentype');
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

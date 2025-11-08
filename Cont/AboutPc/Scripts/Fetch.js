@@ -18,28 +18,6 @@ async function GitFetch() {
 
 GitFetch();
 
-
-// TIktok
-
-async function TikTokUsr() {
-  try {
-    const response = await axios.get("https://api.scrapecreators.com/v1/tiktok/profile?handle=lu1.on", {
-      headers: { "x-api-key": "t45Nov4v8PSPSmVgkeONfBLSxCq1" }
-    });
-    const data = response.data;
-    document.getElementById("TIKPfp").src = data.user.avatarThumb
-    document.getElementById("Tik-Name").innerText = data.user.nickname
-    document.getElementById("Tik-User_Name").innerText = data.user.uniqueId
-    document.getElementById("TikDesc").innerText = data.user.signature
-    console.log(data);
-  }
-  catch (error) {
-    console.error('Error', error);
-  }
-}
-
-TikTokUsr()
-
 // Discord
 
 const userId = "1390457916506767450";
@@ -60,7 +38,9 @@ async function DiscordUsr() {
         const info = data.d;
 
         document.getElementById("DiscordPfp").src = `https://cdn.discordapp.com/avatars/${info.discord_user.id}/${info.discord_user.avatar}.png?size=256`
-        document.getElementById("DC-Name").innerText = info.discord_user.username
+        document.getElementById("DC-Name").innerText = info.discord_user.display_name
+        document.getElementById("DC-User_Name").innerText = info.discord_user.username
+        document.getElementById("DCDesc").innerText = info.activities.find(a => a.type === 4).state
       }
 
     }

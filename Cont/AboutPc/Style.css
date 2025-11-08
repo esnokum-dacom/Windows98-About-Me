@@ -32,48 +32,101 @@
   -ms-user-select: none;
   user-select: none;
   font-family: "Win95";
+  text-decoration: none;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  background-color: #050505;
+  color: #fbffff;
+  padding: 2px;
 }
 
-#SepH {
-  width: 100%;
-  height: 10px;
-  background-color: black;
+#SepV {
+  width: 1px;
+  height: 100%;
+  background: #fbffff;
+  margin: 0 12px;
+  box-shadow:
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 40px #ffffff;
+}
+
+#CdocAb {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  padding: 5px 10px;
+  text-align: center;
+  outline: solid 1px #fbffff;
+
+}
+
+#TItleR {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  outline: solid 1px #fbffff;
+  height: 40px;
+
+}
+
+a {
+  color: white;
 }
 
 /* GitHub */
 
 #Gith {
+  height: 100px;
   display: flex;
-  margin: 5px 0;
-}
-
-#infoC {
-  display: flex;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  outline: solid 1px #fbffff;
 }
 
 #Gith img {
   width: 100px;
 }
 
-/* TIkTok */
 
-#TikTok {
-  display: flex;
-  margin: 5px 0;
+#Git-User_name {
+  width: 120px;
+}
+
+#Gith h1 {
+  font-size: 20px;
+}
+
+#infoC {
+  margin: 0 5px;
+  place-content: center;
+  place-items: center;
 }
 
 /* Discord */
 
 #Discord {
+  height: 100px;
   display: flex;
-  margin: 5px 0;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  outline: solid 1px #fbffff;
 }
 
 #Discord img {
   width: 100px;
+}
+
+#Discord h1 {
+  font-size: 20px;
+}
+
+#DC-User_Name {
+  width: 120px;
 }

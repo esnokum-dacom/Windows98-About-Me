@@ -47,8 +47,6 @@ async function getCurrentlyPlaying() {
     return `${minutes}⁺${seconds.toString().padStart(2, '0')}`
   }
 
-  console.log(data);
-
   document.getElementById('Song').innerText = `⋆ ${song.name}`;
   document.getElementById('AlbumArt').src = song.album.images[0].url;
   document.getElementById("Artist").innerText = ` ${song.artists[0].name}`

@@ -38,7 +38,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  -webkit-user-drag: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -58,6 +57,10 @@ body {
   background-color: var(--primary-color);
 }
 
+#Container-BodyAMB {
+  width: 95%;
+}
+
 #BackExpl {
   position: fixed;
   width: 100%;
@@ -67,7 +70,7 @@ body {
 }
 
 #ContainerAll {
-  display: flex;
+  display: grid;
   place-items: center;
   width: 600px;
 }
@@ -93,16 +96,6 @@ body {
   padding: 4px;
 }
 
-#Fhead {
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-  width: 600px;
-  place-items: center;
-  text-align: center;
-  font-family: "win98";
-}
-
 #Fhead h1 {
   font-family: "hibrid7";
 }
@@ -123,23 +116,11 @@ body {
   outline-offset: 2px;
 }
 
-.Others {
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-  background-color: var(--third-color);
-  text-align: center;
-  height: 100px;
-  padding: 0 40px;
-  margin: 10px 5px 30px 5px;
-  outline: dashed .1px var(--lineVck-color);
-  outline-offset: 2px;
-}
-
 .CdocAb {
   display: flex;
   flex-direction: column;
   place-content: center;
+  place-items: center;
   background-color: var(--third-color);
   padding: 5px 10px;
   text-align: center;
@@ -167,37 +148,22 @@ body {
   font-family: "Win95";
 }
 
-#RightSide {
-  width: 300px;
-  place-items: center;
-}
-
-#SePR {
-  width: 20px;
-}
-
 .Bander {
   background-color: var(--line-wcolor);
   padding: 0 8px;
   text-align: left;
-  margin: 8px 0;
   outline: dashed .1px var(--fourth-color);
   outline-offset: 2px;
+}
+
+#MyRD {
+  width: calc(100% + 380px);
+  transform: translateX(-190px);
 }
 
 #ContxBand {
   width: calc(100% + 50px);
   transform: translateX(-30px);
-}
-
-/* Spotify */
-
-#SpotifySong {
-  display: flex;
-}
-
-#DataSpotify {
-  width: 100%;
 }
 
 #TitleOth {
@@ -210,59 +176,18 @@ body {
 #TextBander {
   font-family: "hibrid7";
   font-weight: 900;
+  font-size: 8px;
   color: var(--fourth-color);
-  width: calc(100% + 100px);
-  transform: translateX(-50px);
+  width: calc(100% + 10px);
+  text-align: center;
 }
 
-#Song {
-  width: calc(100% + 250px);
-  font-size: 15px;
-  transform: translateX(-90px);
+#ImagesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
 }
 
-#Album {
-  width: 90%;
-  padding: 2px 0;
-}
-
-#AlbumArt {
-  width: 180px;
-  margin: 0 10px 0 0px;
-}
-
-#Artist {
-  width: 90%;
-  text-align: left;
-}
-
-#DataSpotify {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-}
-
-#Time {
-  background-color: var(--line-wcolor);
-  padding: 5px;
-  text-align: left;
-  margin: 8px 0;
-  outline: dashed .1px var(--fourth-color);
-  outline-offset: 2px;
-}
-
-#BarExt {
-  background-color: var(--line-wcolor);
-  width: 100%;
-  padding: 2px;
-  text-align: left;
-  margin: 8px 0;
-  outline: dashed .1px var(--fourth-color);
-  outline-offset: 2px;
-}
-
-#BarInt {
-  width: 100%;
-  height: 10px;
-  background-color: var(--line-bcolor);
+.Render-img {
+  width: 100px;
 }

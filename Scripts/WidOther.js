@@ -231,6 +231,8 @@ window.addEventListener('DOMContentLoaded', () => {
   restoreWindows();
 });
 
+window.CreateWid = CreateWid;
+
 export { WindowStorage, restoreWindows };
 
 const windows = WindowStorage.loadAll();

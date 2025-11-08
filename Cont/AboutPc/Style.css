@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Win95";
-  src: url(../Props/Fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf) format('truetype');
+  src: url(../../Props/Fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf) format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Win98";
-  src: url(../Props/Fonts/MSW98UI-Regular.ttf) format('truetype');
+  src: url(../../Props/Fonts/MSW98UI-Regular.ttf) format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Pixie97";
-  src: url(../Props/Fonts/ari-w9500.ttf) format('truetype');
+  src: url(../../Props/Fonts/ari-w9500.ttf) format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: "hibrid7";
-  src: url(../Props/Fonts/BelanidiSerif-Regular.otf) format('opentype');
+  src: url(../../Props/Fonts/BelanidiSerif-Regular.otf) format('opentype');
   font-weight: bold;
 }
 
@@ -31,4 +31,49 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: "Win95";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#SepH {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+}
+
+/* GitHub */
+
+#Gith {
+  display: flex;
+  margin: 5px 0;
+}
+
+#infoC {
+  display: flex;
+}
+
+#Gith img {
+  width: 100px;
+}
+
+/* TIkTok */
+
+#TikTok {
+  display: flex;
+  margin: 5px 0;
+}
+
+/* Discord */
+
+#Discord {
+  display: flex;
+  margin: 5px 0;
+}
+
+#Discord img {
+  width: 100px;
 }

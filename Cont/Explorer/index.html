@@ -9,11 +9,11 @@
 </head>
 
 <body>
-  <img id="BackExpl" src="../Props/images/BackFExpl.png">
+  <img id="BackExpl" src="../../Props/images/BackFExpl.png">
   <div id="Fhead">
-    <img id="ImgF" src="../Props/images/First.png">
+    <img id="ImgF" src="../../Props/images/First.png">
     <div>
-      <h1>˗ˏˋHi!... And welcome</h1>
+      <h1 class="Bander" id="TextBander">˗ˏˋHi!... And welcome</h1>
       <p>⟡.₊.hello and welcome to my web... i create this for one reason, i want to create my own web for...
         whatever.₊.⟡</p>
     </div>
@@ -37,15 +37,37 @@
             thanks for visit there
           </p>
         </div>
+        <div id="TitleOth">
+          <h2 class="Bander">Listening</h2>
+        </div>
+        <div class="CdocAb">
+          <div id="SpotifySong">
+            <img id="AlbumArt">
+            <div id="DataSpotify">
+              <h2 class="Bander" id="Song"></h2>
+              <p class="Bander" id="Album"></p>
+              <p class="Bander" id="Artist"></p>
+              <p id="Time"></p>
+              <div id="BarExt">
+                <div id="BarInt"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
       <div id="SePR"></div>
       <div id="RightSide">
         <div class="Others">
+          <button id="CreateCW">Renders</button>
         </div>
         <div class="Others"></div>
       </div>
     </div>
   </div>
+  <script src="./Scripts/ApiReq.js"></script>
+  <script type="module" src="./Scripts/Window.js"></script>
+  <script type="module" src="../../Scripts/WidOther.js"></script>
 </body>
 
 </html>

@@ -43,4 +43,3 @@ function mUp(e) {
 }
 
 icon.addEventListener("dblclick", () => CreateWid(icon, "About Onu", "My Pc.png", "Cont/AboutPc/index.html", null, "500", "500"))
-

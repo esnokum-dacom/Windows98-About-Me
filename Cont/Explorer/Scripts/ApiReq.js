@@ -57,3 +57,44 @@ async function getCurrentlyPlaying() {
 
 setInterval(getCurrentlyPlaying, 1000);
 
+
+// Renders
+const ContainerImgs = document.getElementById("lastRender")
+
+async function GetImages() {
+  try {
+    const response = await fetch("https://raw.githubusercontent.com/esnokum-dacom/Renders-Images/refs/heads/main/Renders.json")
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+
+    let LastId = null
+    let LastImg = null
+
+    data.images.forEach((img, index, array) => {
+      if (index === array.length - 1) {
+        LastId = img.id
+        LastImg = img.imglink
+        const RContainer = document.createElement("div")
+        ContainerImgs.append(RContainer)
+
+        const ImageTitle = document.createElement("h2")
+        ImageTitle.innerText = img.name;
+        ImageTitle.className = "bander"
+        ImageTitle.id = "TTextBander"
+        RContainer.appendChild(ImageTitle)
+
+        const image = document.createElement('img');
+        image.src = LastImg;
+        image.className = "Render-img"
+        RContainer.appendChild(image);
+      }
+    });
+
+  } catch (error) {
+
+  }
+}
+
+GetImages()

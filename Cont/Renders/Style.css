@@ -176,7 +176,7 @@ body {
 #TextBander {
   font-family: "hibrid7";
   font-weight: 900;
-  font-size: 8px;
+  font-size: 20px;
   color: var(--fourth-color);
   width: calc(100% + 10px);
   text-align: center;
@@ -184,11 +184,11 @@ body {
 
 #ImagesContainer {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(1, auto);
 }
 
 .Render-img {
-  width: 100px;
+  width: 400px;
   margin: 8px 0;
 }

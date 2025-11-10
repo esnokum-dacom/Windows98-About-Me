@@ -134,7 +134,8 @@ body {
 }
 
 .CdocAb p {
-  margin: 5px 0;
+  margin: 8px 0;
+  color: var(--lineVck-color);
 }
 
 .CdocAb h2 {

@@ -151,8 +151,7 @@ body {
 }
 
 .CdocAb p {
-  margin: 8px 0;
-  color: var(--lineVck-color);
+  margin: 5px 0;
 }
 
 .CdocAb h2 {
@@ -324,10 +323,4 @@ body {
   color: var(--fourth-color);
   width: calc(100% + 100px);
   transform: translateX(-50px);
-}
-
-#OnGirDec {
-  position: absolute;
-  width: 150px;
-  transform: translate(-95px, 5px);
 }

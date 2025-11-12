@@ -58,6 +58,10 @@ body {
   background-color: var(--primary-color);
 }
 
+#Container-BodyAMB {
+  width: 95%;
+}
+
 #BackExpl {
   position: fixed;
   width: 100%;

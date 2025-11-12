@@ -203,10 +203,10 @@ body {
 }
 
 #Song {
-  margin: -25px 0;
-  width: calc(100% + 45px);
-  font-size: 30px;
-  transform: translate(-22px, 40px);
+  margin: -15px 0;
+  width: calc(55%);
+  font-size: 15px;
+  transform: translate(-22px, 25px);
   z-index: 1;
 }
 
@@ -221,6 +221,6 @@ body {
   display: flex;
   height: 100%;
   flex-direction: column;
-  place-content: end;
+  place-content: center;
   place-items: center;
 }

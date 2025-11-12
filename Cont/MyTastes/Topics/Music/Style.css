@@ -119,11 +119,10 @@ body {
   display: flex;
   flex-direction: column;
   place-content: center;
-  place-items: center;
   background-color: var(--third-color);
   padding: 5px 10px;
   text-align: center;
-  margin: 10px 5px;
+  margin: 10px 10px;
   outline: dashed .1px var(--lineVck-color);
   outline-offset: 2px;
 }
@@ -134,6 +133,7 @@ body {
 
 .CdocAb p {
   margin: 8px 0;
+  font-size: 15px;
   color: var(--lineVck-color);
 }
 
@@ -157,8 +157,8 @@ body {
 }
 
 #MyRD {
-  width: calc(100% + 310px);
-  transform: translateX(-155px);
+  width: calc(100% + 40px);
+  transform: translateX(-20px);
 }
 
 #ContxBand {
@@ -178,17 +178,49 @@ body {
   font-weight: 900;
   font-size: 20px;
   color: var(--fourth-color);
-  width: calc(100% + 10px);
   text-align: center;
+  margin: 5px 8px;
 }
 
-#ImagesContainer {
+#Albumscalendar {
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(1, auto);
 }
 
-.Render-img {
-  width: 400px;
+.Art-img {
+  width: 250px;
   margin: 8px 0;
+}
+
+#ThoughtAlb {
+  font-family: "hibrid7";
+  font-weight: 900;
+  font-size: 12px;
+  color: var(--fourth-color);
+  text-align: center;
+  margin: 5px 8px;
+}
+
+#Song {
+  margin: -25px 0;
+  width: calc(100% + 45px);
+  font-size: 30px;
+  transform: translate(-22px, 40px);
+  z-index: 1;
+}
+
+.ContTh {
+  display: flex;
+  width: 100%;
+  place-content: start;
+  place-items: center;
+}
+
+.Infoh {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  place-content: end;
+  place-items: center;
 }

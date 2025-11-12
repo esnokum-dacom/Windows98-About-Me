@@ -134,6 +134,10 @@ body {
   outline-offset: 2px;
 }
 
+.Others p {
+  color: var(--lineVck-color);
+}
+
 .CdocAb {
   display: flex;
   flex-direction: column;

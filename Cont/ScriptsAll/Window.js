@@ -17,7 +17,6 @@ export default function initRendersButton(AppTrigger, WindowName, AppIcon, AppIn
     }
   }
 
-  // Esperar a que el DOM esté listo
   if (document.readyState === 'loading') {
     window.addEventListener("DOMContentLoaded", setupButton);
   } else {
